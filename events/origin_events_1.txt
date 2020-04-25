@@ -2208,92 +2208,92 @@ pop_event = {
 # Dyson Swarm - colonizing space
 					from = { is_planet_class = pc_dyson_swarm }
 # Living Space
-					from = { pc_gas_giant_habitat }			
-					from = { pc_asteroid_habitat }				
-					from = { pc_ice_asteroid_habitat }
-					from = { pc_rare_crystal_asteroid_habitat }
-					from = { pc_molten_habitat }
-					from = { pc_barren_habitat }
-					from = { pc_barren_cold_habitat }
-					from = { pc_toxic_habitat }
-					from = { pc_frozen_habitat }
-					from = { pc_b_star_habitat }
-					from = { pc_a_star_habitat }
-					from = { pc_f_star_habitat }
-					from = { pc_g_star_habitat }
-					from = { pc_k_star_habitat }
-					from = { pc_m_star_habitat }
-					from = { pc_m_giant_star_habitat }
-					from = { pc_t_star_habitat }
-					from = { pc_black_hole_habitat }
-					from = { pc_neutron_star_habitat }
-					from = { pc_pulsar_habitat }
+					from = { is_planet_class = pc_gas_giant_habitat }			
+					from = { is_planet_class = pc_asteroid_habitat }				
+					from = { is_planet_class = pc_ice_asteroid_habitat }
+					from = { is_planet_class = pc_rare_crystal_asteroid_habitat }
+					from = { is_planet_class = pc_molten_habitat }
+					from = { is_planet_class = pc_barren_habitat }
+					from = { is_planet_class = pc_barren_cold_habitat }
+					from = { is_planet_class = pc_toxic_habitat }
+					from = { is_planet_class = pc_frozen_habitat }
+					from = { is_planet_class = pc_b_star_habitat }
+					from = { is_planet_class = pc_a_star_habitat }
+					from = { is_planet_class = pc_f_star_habitat }
+					from = { is_planet_class = pc_g_star_habitat }
+					from = { is_planet_class = pc_k_star_habitat }
+					from = { is_planet_class = pc_m_star_habitat }
+					from = { is_planet_class = pc_m_giant_star_habitat }
+					from = { is_planet_class = pc_t_star_habitat }
+					from = { is_planet_class = pc_black_hole_habitat }
+					from = { is_planet_class = pc_neutron_star_habitat }
+					from = { is_planet_class = pc_pulsar_habitat }
 # Habitation
-					from = { pc_hab_gas_giant_energy }
-					from = { pc_hab_gas_giant_science }
-					from = { pc_hab_gas_giant_minerals }
-					from = { pc_hab_asteroid }
-					from = { pc_hab_ice_asteroid }
-					from = { pc_hab_rare_crystal_asteroid }
-					from = { pc_hab_molten }
-					from = { pc_hab_barren }
-					from = { pc_hab_barren_cold }
-					from = { pc_hab_toxic }
-					from = { pc_hab_frozen }
+					from = { is_planet_class = pc_hab_gas_giant_energy }
+					from = { is_planet_class = pc_hab_gas_giant_science }
+					from = { is_planet_class = pc_hab_gas_giant_minerals }
+					from = { is_planet_class = pc_hab_asteroid }
+					from = { is_planet_class = pc_hab_ice_asteroid }
+					from = { is_planet_class = pc_hab_rare_crystal_asteroid }
+					from = { is_planet_class = pc_hab_molten }
+					from = { is_planet_class = pc_hab_barren }
+					from = { is_planet_class = pc_hab_barren_cold }
+					from = { is_planet_class = pc_hab_toxic }
+					from = { is_planet_class = pc_hab_frozen }
 # Gigastructural Engineering & More
-					from = { pc_ringworld_city }
-					from = { pc_ringworld_machine }
-					from = { pc_ringworld_hive }
-					from = { pc_birch }
-					from = { pc_flat_world }
-					from = { pc_habitable_m_star }
-					from = { pc_habitable_k_star }
-					from = { pc_habitable_g_star }
-					from = { pc_ringworld_alloys }
-					from = { pc_giga_planetary_computer }
-					from = { pc_city_ringworld_habitable }
-					from = { pc_habitable_gas_giant }
-					from = { pc_ll_temperate }
-					from = { pc_ll_foggy }
-					from = { pc_virtual_world }
-					from = { pc_squareworld_habitable }
-					from = { pc_giga_ringworld_habitable }
-					from = { pc_gigaorbital_ring }
-					from = { pc_interstellar_habitat }
-					from = { pc_interstellar_ringworld_habitable }
-					from = { pc_virtual_reality }
-					from = { pc_virtual_industry }
-					from = { pc_virtual_stellar_industry }
+					from = { is_planet_class = pc_ringworld_city }
+					from = { is_planet_class = pc_ringworld_machine }
+					from = { is_planet_class = pc_ringworld_hive }
+					from = { is_planet_class = pc_birch }
+					from = { is_planet_class = pc_flat_world }
+					from = { is_planet_class = pc_habitable_m_star }
+					from = { is_planet_class = pc_habitable_k_star }
+					from = { is_planet_class = pc_habitable_g_star }
+					from = { is_planet_class = pc_ringworld_alloys }
+					from = { is_planet_class = pc_giga_planetary_computer }
+					from = { is_planet_class = pc_city_ringworld_habitable }
+					from = { is_planet_class = pc_habitable_gas_giant }
+					from = { is_planet_class = pc_ll_temperate }
+					from = { is_planet_class = pc_ll_foggy }
+					from = { is_planet_class = pc_virtual_world }
+					from = { is_planet_class = pc_squareworld_habitable }
+					from = { is_planet_class = pc_giga_ringworld_habitable }
+					from = { is_planet_class = pc_gigaorbital_ring }
+					from = { is_planet_class = pc_interstellar_habitat }
+					from = { is_planet_class = pc_interstellar_ringworld_habitable }
+					from = { is_planet_class = pc_virtual_reality }
+					from = { is_planet_class = pc_virtual_industry }
+					from = { is_planet_class = pc_virtual_stellar_industry }
 # Ascendancy Ringworlds
-					from = { pc_ringworld_city }
-					from = { pc_ringworld_eco_city }
-					from = { pc_ringworld_energy_city }
-					from = { pc_ringworld_machine }
-					from = { pc_ringworld_hive }
-					from = { pc_ringworld_shrouded_paradise }
-					from = { pc_square_ringworld_city }
-					from = { pc_square_ringworld_energy_city }
-					from = { pc_square_ringworld_machine }
-					from = { pc_square_ringworld_hive }
-					from = { pc_ringworld_assimilated }
-					from = { pc_ringworld_assimilated2 }
-					from = { pc_ringworld_assimilated3 }
-					from = { pc_ringworld_assimilated4 }
-					from = { pc_ringworld_machine_factory }
-					from = { pc_ringworld_bioforge }
-					from = { pc_ringworld_mining }
-					from = { pc_ringworld_energy }
-					from = { pc_ringworld_trade }
-					from = { pc_ringworld_training }
-					from = { pc_ringworld_training_shielded }
-					from = { pc_ringworld_eco }
-					from = { pc_ringworld_farming }
-					from = { pc_ringworld_razed_city }
-					from = { pc_ringworld_razed_energy }
-					from = { pc_ringworld_razed_farming }
-					from = { pc_ringworld_razed_mining }
-					from = { pc_ringworld_razed_training }
-					from = { pc_ringworld_razed_eco }
+					from = { is_planet_class = pc_ringworld_city }
+					from = { is_planet_class = pc_ringworld_eco_city }
+					from = { is_planet_class = pc_ringworld_energy_city }
+					from = { is_planet_class = pc_ringworld_machine }
+					from = { is_planet_class = pc_ringworld_hive }
+					from = { is_planet_class = pc_ringworld_shrouded_paradise }
+					from = { is_planet_class = pc_square_ringworld_city }
+					from = { is_planet_class = pc_square_ringworld_energy_city }
+					from = { is_planet_class = pc_square_ringworld_machine }
+					from = { is_planet_class = pc_square_ringworld_hive }
+					from = { is_planet_class = pc_ringworld_assimilated }
+					from = { is_planet_class = pc_ringworld_assimilated2 }
+					from = { is_planet_class = pc_ringworld_assimilated3 }
+					from = { is_planet_class = pc_ringworld_assimilated4 }
+					from = { is_planet_class = pc_ringworld_machine_factory }
+					from = { is_planet_class = pc_ringworld_bioforge }
+					from = { is_planet_class = pc_ringworld_mining }
+					from = { is_planet_class = pc_ringworld_energy }
+					from = { is_planet_class = pc_ringworld_trade }
+					from = { is_planet_class = pc_ringworld_training }
+					from = { is_planet_class = pc_ringworld_training_shielded }
+					from = { is_planet_class = pc_ringworld_eco }
+					from = { is_planet_class = pc_ringworld_farming }
+					from = { is_planet_class = pc_ringworld_razed_city }
+					from = { is_planet_class = pc_ringworld_razed_energy }
+					from = { is_planet_class = pc_ringworld_razed_farming }
+					from = { is_planet_class = pc_ringworld_razed_mining }
+					from = { is_planet_class = pc_ringworld_razed_training }
+					from = { is_planet_class = pc_ringworld_razed_eco }
 				}				
 			}
 			modify_species = {
@@ -2332,92 +2332,92 @@ pop_event = {
 # Dyson Swarm - colonizing space
 					from = { is_planet_class = pc_dyson_swarm }
 # Living Space
-					from = { pc_gas_giant_habitat }			
-					from = { pc_asteroid_habitat }				
-					from = { pc_ice_asteroid_habitat }
-					from = { pc_rare_crystal_asteroid_habitat }
-					from = { pc_molten_habitat }
-					from = { pc_barren_habitat }
-					from = { pc_barren_cold_habitat }
-					from = { pc_toxic_habitat }
-					from = { pc_frozen_habitat }
-					from = { pc_b_star_habitat }
-					from = { pc_a_star_habitat }
-					from = { pc_f_star_habitat }
-					from = { pc_g_star_habitat }
-					from = { pc_k_star_habitat }
-					from = { pc_m_star_habitat }
-					from = { pc_m_giant_star_habitat }
-					from = { pc_t_star_habitat }
-					from = { pc_black_hole_habitat }
-					from = { pc_neutron_star_habitat }
-					from = { pc_pulsar_habitat }
+					from = { is_planet_class = pc_gas_giant_habitat }			
+					from = { is_planet_class = pc_asteroid_habitat }				
+					from = { is_planet_class = pc_ice_asteroid_habitat }
+					from = { is_planet_class = pc_rare_crystal_asteroid_habitat }
+					from = { is_planet_class = pc_molten_habitat }
+					from = { is_planet_class = pc_barren_habitat }
+					from = { is_planet_class = pc_barren_cold_habitat }
+					from = { is_planet_class = pc_toxic_habitat }
+					from = { is_planet_class = pc_frozen_habitat }
+					from = { is_planet_class = pc_b_star_habitat }
+					from = { is_planet_class = pc_a_star_habitat }
+					from = { is_planet_class = pc_f_star_habitat }
+					from = { is_planet_class = pc_g_star_habitat }
+					from = { is_planet_class = pc_k_star_habitat }
+					from = { is_planet_class = pc_m_star_habitat }
+					from = { is_planet_class = pc_m_giant_star_habitat }
+					from = { is_planet_class = pc_t_star_habitat }
+					from = { is_planet_class = pc_black_hole_habitat }
+					from = { is_planet_class = pc_neutron_star_habitat }
+					from = { is_planet_class = pc_pulsar_habitat }
 # Habitation
-					from = { pc_hab_gas_giant_energy }
-					from = { pc_hab_gas_giant_science }
-					from = { pc_hab_gas_giant_minerals }
-					from = { pc_hab_asteroid }
-					from = { pc_hab_ice_asteroid }
-					from = { pc_hab_rare_crystal_asteroid }
-					from = { pc_hab_molten }
-					from = { pc_hab_barren }
-					from = { pc_hab_barren_cold }
-					from = { pc_hab_toxic }
-					from = { pc_hab_frozen }
+					from = { is_planet_class = pc_hab_gas_giant_energy }
+					from = { is_planet_class = pc_hab_gas_giant_science }
+					from = { is_planet_class = pc_hab_gas_giant_minerals }
+					from = { is_planet_class = pc_hab_asteroid }
+					from = { is_planet_class = pc_hab_ice_asteroid }
+					from = { is_planet_class = pc_hab_rare_crystal_asteroid }
+					from = { is_planet_class = pc_hab_molten }
+					from = { is_planet_class = pc_hab_barren }
+					from = { is_planet_class = pc_hab_barren_cold }
+					from = { is_planet_class = pc_hab_toxic }
+					from = { is_planet_class = pc_hab_frozen }
 # Gigastructural Engineering & More
-					from = { pc_ringworld_city }
-					from = { pc_ringworld_machine }
-					from = { pc_ringworld_hive }
-					from = { pc_birch }
-					from = { pc_flat_world }
-					from = { pc_habitable_m_star }
-					from = { pc_habitable_k_star }
-					from = { pc_habitable_g_star }
-					from = { pc_ringworld_alloys }
-					from = { pc_giga_planetary_computer }
-					from = { pc_city_ringworld_habitable }
-					from = { pc_habitable_gas_giant }
-					from = { pc_ll_temperate }
-					from = { pc_ll_foggy }
-					from = { pc_virtual_world }
-					from = { pc_squareworld_habitable }
-					from = { pc_giga_ringworld_habitable }
-					from = { pc_gigaorbital_ring }
-					from = { pc_interstellar_habitat }
-					from = { pc_interstellar_ringworld_habitable }
-					from = { pc_virtual_reality }
-					from = { pc_virtual_industry }
-					from = { pc_virtual_stellar_industry }
+					from = { is_planet_class = pc_ringworld_city }
+					from = { is_planet_class = pc_ringworld_machine }
+					from = { is_planet_class = pc_ringworld_hive }
+					from = { is_planet_class = pc_birch }
+					from = { is_planet_class = pc_flat_world }
+					from = { is_planet_class = pc_habitable_m_star }
+					from = { is_planet_class = pc_habitable_k_star }
+					from = { is_planet_class = pc_habitable_g_star }
+					from = { is_planet_class = pc_ringworld_alloys }
+					from = { is_planet_class = pc_giga_planetary_computer }
+					from = { is_planet_class = pc_city_ringworld_habitable }
+					from = { is_planet_class = pc_habitable_gas_giant }
+					from = { is_planet_class = pc_ll_temperate }
+					from = { is_planet_class = pc_ll_foggy }
+					from = { is_planet_class = pc_virtual_world }
+					from = { is_planet_class = pc_squareworld_habitable }
+					from = { is_planet_class = pc_giga_ringworld_habitable }
+					from = { is_planet_class = pc_gigaorbital_ring }
+					from = { is_planet_class = pc_interstellar_habitat }
+					from = { is_planet_class = pc_interstellar_ringworld_habitable }
+					from = { is_planet_class = pc_virtual_reality }
+					from = { is_planet_class = pc_virtual_industry }
+					from = { is_planet_class = pc_virtual_stellar_industry }
 # Ascendancy Ringworlds
-					from = { pc_ringworld_city }
-					from = { pc_ringworld_eco_city }
-					from = { pc_ringworld_energy_city }
-					from = { pc_ringworld_machine }
-					from = { pc_ringworld_hive }
-					from = { pc_ringworld_shrouded_paradise }
-					from = { pc_square_ringworld_city }
-					from = { pc_square_ringworld_energy_city }
-					from = { pc_square_ringworld_machine }
-					from = { pc_square_ringworld_hive }
-					from = { pc_ringworld_assimilated }
-					from = { pc_ringworld_assimilated2 }
-					from = { pc_ringworld_assimilated3 }
-					from = { pc_ringworld_assimilated4 }
-					from = { pc_ringworld_machine_factory }
-					from = { pc_ringworld_bioforge }
-					from = { pc_ringworld_mining }
-					from = { pc_ringworld_energy }
-					from = { pc_ringworld_trade }
-					from = { pc_ringworld_training }
-					from = { pc_ringworld_training_shielded }
-					from = { pc_ringworld_eco }
-					from = { pc_ringworld_farming }
-					from = { pc_ringworld_razed_city }
-					from = { pc_ringworld_razed_energy }
-					from = { pc_ringworld_razed_farming }
-					from = { pc_ringworld_razed_mining }
-					from = { pc_ringworld_razed_training }
-					from = { pc_ringworld_razed_eco }					
+					from = { is_planet_class = pc_ringworld_city }
+					from = { is_planet_class = pc_ringworld_eco_city }
+					from = { is_planet_class = pc_ringworld_energy_city }
+					from = { is_planet_class = pc_ringworld_machine }
+					from = { is_planet_class = pc_ringworld_hive }
+					from = { is_planet_class = pc_ringworld_shrouded_paradise }
+					from = { is_planet_class = pc_square_ringworld_city }
+					from = { is_planet_class = pc_square_ringworld_energy_city }
+					from = { is_planet_class = pc_square_ringworld_machine }
+					from = { is_planet_class = pc_square_ringworld_hive }
+					from = { is_planet_class = pc_ringworld_assimilated }
+					from = { is_planet_class = pc_ringworld_assimilated2 }
+					from = { is_planet_class = pc_ringworld_assimilated3 }
+					from = { is_planet_class = pc_ringworld_assimilated4 }
+					from = { is_planet_class = pc_ringworld_machine_factory }
+					from = { is_planet_class = pc_ringworld_bioforge }
+					from = { is_planet_class = pc_ringworld_mining }
+					from = { is_planet_class = pc_ringworld_energy }
+					from = { is_planet_class = pc_ringworld_trade }
+					from = { is_planet_class = pc_ringworld_training }
+					from = { is_planet_class = pc_ringworld_training_shielded }
+					from = { is_planet_class = pc_ringworld_eco }
+					from = { is_planet_class = pc_ringworld_farming }
+					from = { is_planet_class = pc_ringworld_razed_city }
+					from = { is_planet_class = pc_ringworld_razed_energy }
+					from = { is_planet_class = pc_ringworld_razed_farming }
+					from = { is_planet_class = pc_ringworld_razed_mining }
+					from = { is_planet_class = pc_ringworld_razed_training }
+					from = { is_planet_class = pc_ringworld_razed_eco }					
 				}
 			}
 			modify_species = {
