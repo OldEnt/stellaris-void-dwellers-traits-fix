@@ -2294,6 +2294,8 @@ pop_event = {
 					from = { is_planet_class = pc_ringworld_razed_mining }
 					from = { is_planet_class = pc_ringworld_razed_training }
 					from = { is_planet_class = pc_ringworld_razed_eco }
+# Twinks Atlanteans
+					from = { is_planet_class = pc_skypalace }						
 				}				
 			}
 			modify_species = {
@@ -2417,7 +2419,9 @@ pop_event = {
 					from = { is_planet_class = pc_ringworld_razed_farming }
 					from = { is_planet_class = pc_ringworld_razed_mining }
 					from = { is_planet_class = pc_ringworld_razed_training }
-					from = { is_planet_class = pc_ringworld_razed_eco }					
+					from = { is_planet_class = pc_ringworld_razed_eco }
+# Twinks Atlanteans
+					from = { is_planet_class = pc_skypalace }					
 				}
 			}
 			modify_species = {

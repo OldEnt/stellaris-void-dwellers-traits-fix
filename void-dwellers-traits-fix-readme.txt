@@ -7,8 +7,12 @@ Void Dwellers will no longer receive negative trait when settling Ring World or 
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1510731495]Habitation[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2049549075]Living Space[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More[/url]
-
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1644767570]Ascendancy Ringworlds[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2079398322]Twinks Atlanteans[/url]
 [/list]
+
+Source on GitHub: https://github.com/OldEnt/stellaris-void-dwellers-traits-fix
+
 Makes following planet classes fully habitable for Void Dwellers:
 [b]# Vanilla[/b]
 pc_habitat
@@ -91,7 +95,41 @@ pc_interstellar_habitat
 pc_interstellar_ringworld_habitable
 pc_virtual_reality
 pc_virtual_industry
-pc_virtual_stellar_industry	
+pc_virtual_stellar_industry
+
+[b]# Ascendancy Ringworlds[/b]
+pc_ringworld_city
+pc_ringworld_eco_city
+pc_ringworld_energy_city
+pc_ringworld_machine
+pc_ringworld_hive
+pc_ringworld_shrouded_paradise
+pc_square_ringworld_city
+pc_square_ringworld_energy_city
+pc_square_ringworld_machine
+pc_square_ringworld_hive
+pc_ringworld_assimilated
+pc_ringworld_assimilated2
+pc_ringworld_assimilated3
+pc_ringworld_assimilated4
+pc_ringworld_machine_factory
+pc_ringworld_bioforge
+pc_ringworld_mining
+pc_ringworld_energy
+pc_ringworld_trade
+pc_ringworld_training
+pc_ringworld_training_shielded
+pc_ringworld_eco
+pc_ringworld_farming
+pc_ringworld_razed_city
+pc_ringworld_razed_energy
+pc_ringworld_razed_farming
+pc_ringworld_razed_mining
+pc_ringworld_razed_training
+pc_ringworld_razed_eco	
+
+[b]# Twinks Atlanteans[/b]
+pc_skypalace
 
 This mod will not remove negative trait from your existing pops. You can gene-mod them to your starting pops easily.
 
