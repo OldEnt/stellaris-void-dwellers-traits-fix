@@ -29,6 +29,7 @@ country_event = {
 					}
 				}
 			}
+			set_country_flag = scion_needs_fe
 			if = {
 				limit = { is_spiritualist = yes }
 				random_system = {
@@ -1526,6 +1527,7 @@ country_event = {
 	immediate = {
 		save_event_target_as = doomsday_owner
 		capital_scope = {
+			set_planet_flag = doomed_planet_origin
 			add_modifier = {
 				modifier = doomsday_1
 			}
