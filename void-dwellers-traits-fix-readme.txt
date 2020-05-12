@@ -18,7 +18,15 @@ Makes following planet classes fully habitable for Void Dwellers:
 pc_habitat
 pc_ringworld_habitable
 
-[b]# Planetary Diversity - Planetary Habitats[/b]
+[b]# Planetary Diversity - Planetary Habitats (2.7.1)[/b]
+pc_pd_barren_cold_hab
+pc_pd_barren_hab
+pc_pd_frozen_hab
+pc_pd_gas_giant_hab
+pc_pd_hothouse_hab
+pc_pd_molten_hab
+
+[b]# Planetary Diversity - Planetary Habitats (2.6.3)[/b]
 pc_gghab
 pc_tmhab
 pc_tmhab2

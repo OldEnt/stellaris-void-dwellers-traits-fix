@@ -2194,6 +2194,13 @@ pop_event = {
 					from = { is_planet_class = pc_habitat }
 					from = { is_planet_class = pc_ringworld_habitable }
 # Planetary Diversity - Planetary Habitats
+					from = { is_planet_class = pc_pd_barren_cold_hab }
+					from = { is_planet_class = pc_pd_barren_hab }
+					from = { is_planet_class = pc_pd_frozen_hab }
+					from = { is_planet_class = pc_pd_gas_giant_hab }
+					from = { is_planet_class = pc_pd_hothouse_hab }
+					from = { is_planet_class = pc_pd_molten_hab }
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility					
 					from = { is_planet_class = pc_gghab }
 					from = { is_planet_class = pc_tmhab }
 					from = { is_planet_class = pc_tmhab2 }
@@ -2204,7 +2211,7 @@ pop_event = {
 					from = { is_planet_class = pc_mhab }
 					from = { is_planet_class = pc_fhab }
 					from = { is_planet_class = pc_fmhab }
-					from = { is_planet_class = pc_mehab }
+					from = { is_planet_class = pc_mehab }		
 # Starborn: Improved Voidtouched
 					from = { is_planet_class = pc_starborn_habitat_start }
 # Dyson Swarm - colonizing space
