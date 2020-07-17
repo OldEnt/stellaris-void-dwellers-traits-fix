@@ -2194,13 +2194,15 @@ pop_event = {
 					from = { is_planet_class = pc_habitat }
 					from = { is_planet_class = pc_ringworld_habitable }
 # Planetary Diversity - Planetary Habitats
-					from = { is_planet_class = pc_pd_barren_cold_hab }
-					from = { is_planet_class = pc_pd_barren_hab }
-					from = { is_planet_class = pc_pd_frozen_hab }
-					from = { is_planet_class = pc_pd_gas_giant_hab }
-					from = { is_planet_class = pc_pd_hothouse_hab }
-					from = { is_planet_class = pc_pd_molten_hab }
-					from = { is_planet_class = pc_pd_asteroid_hab }
+					from = { uses_district_set = pdplanethab }
+				#	from = { is_planet_class = pc_pd_barren_cold_hab }
+				#	from = { is_planet_class = pc_pd_barren_hab }
+				#	from = { is_planet_class = pc_pd_frozen_hab }
+				#	from = { is_planet_class = pc_pd_gas_giant_hab }
+				#	from = { is_planet_class = pc_pd_hothouse_hab }
+				#	from = { is_planet_class = pc_pd_molten_hab }
+				#	from = { is_planet_class = pc_pd_asteroid_hab }
+				#	from = { is_planet_class = pc_pd_toxic_hab }
 # Planetary Diversity - Planetary Habitats - old classes for backwards compatibility					
 					from = { is_planet_class = pc_gghab }
 					from = { is_planet_class = pc_tmhab }
@@ -2328,13 +2330,15 @@ pop_event = {
 					from = { is_planet_class = pc_habitat }
 					from = { is_planet_class = pc_ringworld_habitable }
 # Planetary Diversity - Planetary Habitats
-					from = { is_planet_class = pc_pd_barren_cold_hab }
-					from = { is_planet_class = pc_pd_barren_hab }
-					from = { is_planet_class = pc_pd_frozen_hab }
-					from = { is_planet_class = pc_pd_gas_giant_hab }
-					from = { is_planet_class = pc_pd_hothouse_hab }
-					from = { is_planet_class = pc_pd_molten_hab }
-					from = { is_planet_class = pc_pd_asteroid_hab }
+					from = { uses_district_set = pdplanethab }
+				#	from = { is_planet_class = pc_pd_barren_cold_hab }
+				#	from = { is_planet_class = pc_pd_barren_hab }
+				#	from = { is_planet_class = pc_pd_frozen_hab }
+				#	from = { is_planet_class = pc_pd_gas_giant_hab }
+				#	from = { is_planet_class = pc_pd_hothouse_hab }
+				#	from = { is_planet_class = pc_pd_molten_hab }
+				#	from = { is_planet_class = pc_pd_asteroid_hab }
+				#	from = { is_planet_class = pc_pd_toxic_hab }
 # Planetary Diversity - Planetary Habitats - old classes for backwards compatibility					
 					from = { is_planet_class = pc_gghab }
 					from = { is_planet_class = pc_tmhab }
