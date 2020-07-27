@@ -18,13 +18,16 @@ Makes following planet classes fully habitable for Void Dwellers:
 pc_habitat
 pc_ringworld_habitable
 
-[b]# Planetary Diversity - Planetary Habitats (2.7.1)[/b]
-pc_pd_barren_cold_hab
-pc_pd_barren_hab
-pc_pd_frozen_hab
-pc_pd_gas_giant_hab
-pc_pd_hothouse_hab
-pc_pd_molten_hab
+[b]# Planetary Diversity - Planetary Habitats (2.7.2)[/b]
+uses_district_set = pdplanethab
+# pc_pd_barren_cold_hab
+# pc_pd_barren_hab
+# pc_pd_frozen_hab
+# pc_pd_gas_giant_hab
+# pc_pd_hothouse_hab
+# pc_pd_molten_hab
+# pc_pd_asteroid_hab
+# pc_pd_toxic_hab
 
 [b]# Planetary Diversity - Planetary Habitats (2.6.3)[/b]
 pc_gghab
@@ -95,6 +98,7 @@ pc_city_ringworld_habitable
 pc_habitable_gas_giant
 pc_ll_temperate
 pc_ll_foggy
+pc_ll_torrid
 pc_virtual_world
 pc_squareworld_habitable
 pc_giga_ringworld_habitable
@@ -104,6 +108,9 @@ pc_interstellar_ringworld_habitable
 pc_virtual_reality
 pc_virtual_industry
 pc_virtual_stellar_industry
+pc_alderson_slice_gaia
+pc_alderson_slice_pc
+pc_alderson_slice_ecu
 
 [b]# Ascendancy Ringworlds[/b]
 pc_ringworld_city
@@ -146,3 +153,7 @@ Overwrites events/origin_events_1.txt file.
 This Void Dwellers Ring World fix started as a part of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1961367151]Void Dwellers Expanded[/url] but since it requires modifying core file I separated it and added support for additional mods.
 
 If you want to add your custom planet class to the list just drop a comment below.
+
+Source on GitHub: https://github.com/OldEnt/stellaris-void-dwellers-traits-fix
+
+[url=https://steamcommunity.com/linkfilter/?url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]
