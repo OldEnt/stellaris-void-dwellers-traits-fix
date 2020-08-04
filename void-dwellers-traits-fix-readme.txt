@@ -148,7 +148,7 @@ pc_skypalace
 
 This mod will not remove negative trait from your existing pops. You can gene-mod them to your starting pops easily.
 
-Overwrites events/origin_events_1.txt file.
+Overwrites [b]origin.1[/b] event (present in events/origin_events_1.txt).
 
 This Void Dwellers Ring World fix started as a part of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1961367151]Void Dwellers Expanded[/url] but since it requires modifying core file I separated it and added support for additional mods.
 
