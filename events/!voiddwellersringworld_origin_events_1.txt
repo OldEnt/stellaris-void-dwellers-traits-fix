@@ -103,6 +103,9 @@ pop_event = {
 					from = { is_planet_class = pc_alderson_slice_gaia }
 					from = { is_planet_class = pc_alderson_slice_pc }
 					from = { is_planet_class = pc_alderson_slice_ecu }
+					from = { is_planet_class = pc_equatorial_shipyard }
+					from = { is_planet_class = pc_gigaorbital_ring }
+					from = { is_planet_class = pc_giga_penrose_habitable }
 # Ascendancy Ringworlds
 					from = { is_planet_class = pc_ringworld_city }
 					from = { is_planet_class = pc_ringworld_eco_city }
@@ -134,7 +137,9 @@ pop_event = {
 					from = { is_planet_class = pc_ringworld_razed_training }
 					from = { is_planet_class = pc_ringworld_razed_eco }
 # Twinks Atlanteans
-					from = { is_planet_class = pc_skypalace }						
+					from = { is_planet_class = pc_skypalace }
+# NSC2 Modjam Freebooters Origin
+					from = { uses_district_set = nsc_freebooter_habitat }						
 				}				
 			}
 			modify_species = {
@@ -243,6 +248,9 @@ pop_event = {
 					from = { is_planet_class = pc_alderson_slice_gaia }
 					from = { is_planet_class = pc_alderson_slice_pc }
 					from = { is_planet_class = pc_alderson_slice_ecu }
+					from = { is_planet_class = pc_equatorial_shipyard }
+					from = { is_planet_class = pc_gigaorbital_ring }
+					from = { is_planet_class = pc_giga_penrose_habitable }
 # Ascendancy Ringworlds
 					from = { is_planet_class = pc_ringworld_city }
 					from = { is_planet_class = pc_ringworld_eco_city }
@@ -274,7 +282,9 @@ pop_event = {
 					from = { is_planet_class = pc_ringworld_razed_training }
 					from = { is_planet_class = pc_ringworld_razed_eco }
 # Twinks Atlanteans
-					from = { is_planet_class = pc_skypalace }					
+					from = { is_planet_class = pc_skypalace }
+# NSC2 Modjam Freebooters Origin
+					from = { uses_district_set = nsc_freebooter_habitat }					
 				}
 			}
 			modify_species = {

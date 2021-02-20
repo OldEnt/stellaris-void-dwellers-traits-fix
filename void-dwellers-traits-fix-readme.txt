@@ -9,6 +9,7 @@ Void Dwellers will no longer receive negative trait when settling Ring World or 
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1644767570]Ascendancy Ringworlds[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2079398322]Twinks Atlanteans[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC2 Modjam Freebooters Origin[/url]
 [/list]
 
 Source on GitHub: https://github.com/OldEnt/stellaris-void-dwellers-traits-fix
@@ -111,6 +112,9 @@ pc_virtual_stellar_industry
 pc_alderson_slice_gaia
 pc_alderson_slice_pc
 pc_alderson_slice_ecu
+pc_equatorial_shipyard
+pc_gigaorbital_ring
+pc_giga_penrose_habitable
 
 [b]# Ascendancy Ringworlds[/b]
 pc_ringworld_city
@@ -146,6 +150,9 @@ pc_ringworld_razed_eco
 [b]# Twinks Atlanteans[/b]
 pc_skypalace
 
+[b]# NSC2 Modjam Freebooters Origin[/b]
+uses_district_set = nsc_freebooter_habitat
+
 This mod will not remove negative trait from your existing pops. You can gene-mod them to your starting pops easily.
 
 Overwrites [b]origin.1[/b] event (present in events/origin_events_1.txt).
@@ -155,5 +162,3 @@ This Void Dwellers Ring World fix started as a part of my [url=https://steamcomm
 If you want to add your custom planet class to the list just drop a comment below.
 
 Source on GitHub: https://github.com/OldEnt/stellaris-void-dwellers-traits-fix
-
-[url=https://steamcommunity.com/linkfilter/?url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]
