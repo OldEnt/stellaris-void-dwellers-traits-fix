@@ -1,0 +1,21 @@
+namespace = voiddwellerstraitsfix
+event = {
+	id = voiddwellerstraitsfix.1
+	hide_window = yes
+	fire_only_once = yes
+	immediate = {
+		set_global_flag = voiddwellerstraitsfix_installed
+	}
+}
+
+# Dummy event to reduce error.log. Do not use!
+event = {
+	id = voiddwellerstraitsfix.100
+	is_triggered_only = yes
+	immediate = {
+		set_planet_flag = voiddwellerstraitsfix
+		set_planet_flag = stpg_planetary_habitat
+		set_planet_flag = hab_init
+		set_planet_flag = pdhab
+	}
+}

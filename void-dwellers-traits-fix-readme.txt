@@ -7,151 +7,54 @@ Void Dwellers will no longer receive negative trait when settling Ring World or 
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1510731495]Habitation[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2049549075]Living Space[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1644767570]Ascendancy Ringworlds[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2079398322]Twinks Atlanteans[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC2 Modjam Freebooters Origin[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=727000451]More Events Mod[/url]
 [/list]
 
-Source on GitHub: https://github.com/OldEnt/stellaris-void-dwellers-traits-fix
+Legacy Stellaris 2.* version is available here: https://steamcommunity.com/sharedfiles/filedetails/?id=2441264233
 
 Makes following planet classes fully habitable for Void Dwellers:
+[b]# any planet with custom mod flag[/b
+has_planet_flag = voiddwellerstraitsfix
+
 [b]# Vanilla[/b]
-pc_habitat
-pc_ringworld_habitable
+uses_district_set = habitat
+uses_district_set = ring_world
 
-[b]# Planetary Diversity - Planetary Habitats (2.7.2)[/b]
+[b]# Planetary Diversity - Planetary Habitats[/b]
+has_planet_flag = pdhab
 uses_district_set = pdplanethab
-# pc_pd_barren_cold_hab
-# pc_pd_barren_hab
-# pc_pd_frozen_hab
-# pc_pd_gas_giant_hab
-# pc_pd_hothouse_hab
-# pc_pd_molten_hab
-# pc_pd_asteroid_hab
-# pc_pd_toxic_hab
-
-[b]# Planetary Diversity - Planetary Habitats (2.6.3)[/b]
-pc_gghab
-pc_tmhab
-pc_tmhab2
-pc_mmhab
-pc_mmhab2
-pc_bhab
-pc_bchab
-pc_mhab
-pc_fhab
-pc_fmhab
-pc_mehab
 
 [b]# Starborn: Improved Voidtouched[/b]
-pc_starborn_habitat_start
+uses_district_set = starborn_start
 
 [b]# Dyson Swarm - colonizing space[/b]
-pc_dyson_swarm
+uses_district_set = Dyson_swarm
 
 [b]# Living Space[/b]
-pc_gas_giant_habitat		
-pc_asteroid_habitat			
-pc_ice_asteroid_habitat
-pc_rare_crystal_asteroid_habitat
-pc_molten_habitat
-pc_barren_habitat
-pc_barren_cold_habitat
-pc_toxic_habitat
-pc_frozen_habitat
-pc_b_star_habitat
-pc_a_star_habitat
-pc_f_star_habitat
-pc_g_star_habitat
-pc_k_star_habitat
-pc_m_star_habitat
-pc_m_giant_star_habitat
-pc_t_star_habitat
-pc_black_hole_habitat
-pc_neutron_star_habitat
-pc_pulsar_habitat
+has_planet_flag = stpg_planetary_habitat
 
 [b]# Habitation[/b]
-pc_hab_gas_giant_energy
-pc_hab_gas_giant_science
-pc_hab_gas_giant_minerals
-pc_hab_asteroid
-pc_hab_ice_asteroid
-pc_hab_rare_crystal_asteroid
-pc_hab_molten
-pc_hab_barren
-pc_hab_barren_cold
-pc_hab_toxic
-pc_hab_frozen
+has_planet_flag = hab_init
 
 [b]# Gigastructural Engineering & More[/b]
-pc_ringworld_city
-pc_ringworld_machine
-pc_ringworld_hive
-pc_birch
-pc_flat_world
-pc_habitable_m_star
-pc_habitable_k_star
-pc_habitable_g_star
-pc_ringworld_alloys
-pc_giga_planetary_computer
-pc_city_ringworld_habitable
-pc_habitable_gas_giant
-pc_ll_temperate
-pc_ll_foggy
-pc_ll_torrid
-pc_virtual_world
-pc_squareworld_habitable
-pc_giga_ringworld_habitable
-pc_gigaorbital_ring
-pc_interstellar_habitat
-pc_interstellar_ringworld_habitable
-pc_virtual_reality
-pc_virtual_industry
-pc_virtual_stellar_industry
-pc_alderson_slice_gaia
-pc_alderson_slice_pc
-pc_alderson_slice_ecu
-pc_equatorial_shipyard
-pc_gigaorbital_ring
-pc_giga_penrose_habitable
-
-[b]# Ascendancy Ringworlds[/b]
-pc_ringworld_city
-pc_ringworld_eco_city
-pc_ringworld_energy_city
-pc_ringworld_machine
-pc_ringworld_hive
-pc_ringworld_shrouded_paradise
-pc_square_ringworld_city
-pc_square_ringworld_energy_city
-pc_square_ringworld_machine
-pc_square_ringworld_hive
-pc_ringworld_assimilated
-pc_ringworld_assimilated2
-pc_ringworld_assimilated3
-pc_ringworld_assimilated4
-pc_ringworld_machine_factory
-pc_ringworld_bioforge
-pc_ringworld_mining
-pc_ringworld_energy
-pc_ringworld_trade
-pc_ringworld_training
-pc_ringworld_training_shielded
-pc_ringworld_eco
-pc_ringworld_farming
-pc_ringworld_razed_city
-pc_ringworld_razed_energy
-pc_ringworld_razed_farming
-pc_ringworld_razed_mining
-pc_ringworld_razed_training
-pc_ringworld_razed_eco	
+uses_district_set = giga_planet
+uses_district_set = giga_alderson
+uses_district_set = giga_birch
+uses_district_set = giga_habitat
+uses_district_set = interstellar_ring
+uses_district_set = penrose_ring
+uses_district_set = virtual_ring
 
 [b]# Twinks Atlanteans[/b]
-pc_skypalace
+uses_district_set = skypalace
 
 [b]# NSC2 Modjam Freebooters Origin[/b]
 uses_district_set = nsc_freebooter_habitat
+
+[b]# More Events Mod[/b]
+is_planet_class = pc_mem_vazuran_habitat
 
 This mod will not remove negative trait from your existing pops. You can gene-mod them to your starting pops easily.
 
