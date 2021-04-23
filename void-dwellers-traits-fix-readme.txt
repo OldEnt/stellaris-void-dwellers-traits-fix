@@ -7,12 +7,16 @@ Void Dwellers will no longer receive negative trait when settling Ring World or 
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1510731495]Habitation[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2049549075]Living Space[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1644767570]Ascendancy Ringworlds[/url]
+[*][strike][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1644767570]Ascendancy Ringworlds[/url][/strike] (no longer supported, use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2441264233]Legacy[/url] version)
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2079398322]Twinks Atlanteans[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC2 Modjam Freebooters Origin[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=727000451]More Events Mod[/url]
 [/list]
 
 Source on GitHub: https://github.com/OldEnt/stellaris-void-dwellers-traits-fix
+
+Supports [url=https://steamcommunity.com/workshop/filedetails/?id=2458024521]Dynamic Mod Menu (3.0.*)[/url] and uses its menu template. Use it to switch ecumenopolis habitability off. Alternatively, execute the following command:
+[code]effect set_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited[/code]
 
 Makes following planet classes fully habitable for Void Dwellers:
 
@@ -20,16 +24,26 @@ Makes following planet classes fully habitable for Void Dwellers:
 has_planet_flag = voiddwellerstraitsfix
 
 # Vanilla
-# is_planet_class = pc_habitat
 uses_district_set = habitat
 uses_district_set = ring_world
+# is_planet_class = pc_city
+NOT = { has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited }
+uses_district_set = city_world
 
 # Planetary Diversity - Planetary Habitats
 has_planet_flag = pdhab# failsafe flag
 uses_district_set = pdplanethab
 
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility # unsupported in Stellaris 3.*, use Legacy fix version
+NOT = { has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited }
+uses_district_set = pdarchive # Archive World
+uses_district_set = pdecocity # Eco-Arcology
+uses_district_set = pdnecropolis # Necropolis
+uses_district_set = pdpalacearc # Palace and Capital Arcology
+uses_district_set = pdmilarc # Fortress Arcology
+uses_district_set = pdshroudarc # Shrouded Arcology
+is_planet_class = pc_technoorganic # Techno-Organic World
 
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility # unsupported in Stellaris 3.*, use Legacy fix version
 
 # Starborn: Improved Voidtouched
 uses_district_set = starborn_start

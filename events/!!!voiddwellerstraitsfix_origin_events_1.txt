@@ -18,11 +18,32 @@ pop_event = {
 						# Vanilla
 						# is_planet_class = pc_habitat
 						uses_district_set = habitat
+						# is_planet_class = pc_city
+						AND = {
+							uses_district_set = city_world
+							NOT = {
+								has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+							}
+						}
 						# is_planet_class = pc_ringworld_habitable
 						uses_district_set = ring_world
 						# Planetary Diversity - Planetary Habitats
 						has_planet_flag = pdhab						# failsafe flag
 						uses_district_set = pdplanethab
+						AND = {
+							NOT = {
+								has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+							}
+							OR = {
+								uses_district_set = pdarchive								# Archive World
+								uses_district_set = pdecocity								# Eco-Arcology
+								uses_district_set = pdnecropolis								# Necropolis
+								uses_district_set = pdpalacearc								# Palace and Capital Arcology
+								uses_district_set = pdmilarc								# Fortress Arcology
+								uses_district_set = pdshroudarc								# Shrouded Arcology
+								is_planet_class = pc_technoorganic								# Techno-Organic World
+							}
+						}
 						#	is_planet_class = pc_pd_barren_cold_hab
 						#	is_planet_class = pc_pd_barren_hab
 						#	is_planet_class = pc_pd_frozen_hab
@@ -188,11 +209,32 @@ pop_event = {
 						# Vanilla
 						# is_planet_class = pc_habitat
 						uses_district_set = habitat
+						# is_planet_class = pc_city
+						AND = {
+							uses_district_set = city_world
+							NOT = {
+								has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+							}
+						}
 						# is_planet_class = pc_ringworld_habitable
 						uses_district_set = ring_world
 						# Planetary Diversity - Planetary Habitats
 						has_planet_flag = pdhab						# failsafe flag
 						uses_district_set = pdplanethab
+						AND = {
+							NOT = {
+								has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+							}
+							OR = {
+								uses_district_set = pdarchive								# Archive World
+								uses_district_set = pdecocity								# Eco-Arcology
+								uses_district_set = pdnecropolis								# Necropolis
+								uses_district_set = pdpalacearc								# Palace and Capital Arcology
+								uses_district_set = pdmilarc								# Fortress Arcology
+								uses_district_set = pdshroudarc								# Shrouded Arcology
+								is_planet_class = pc_technoorganic								# Techno-Organic World
+							}
+						}
 						#	is_planet_class = pc_pd_barren_cold_hab
 						#	is_planet_class = pc_pd_barren_hab
 						#	is_planet_class = pc_pd_frozen_hab
