@@ -1,0 +1,6 @@
+﻿l_french:
+
+ voiddwellerstraitsfix_menu_name:0 "$voiddwellerstraitsfix_menu.0.name$"
+ voiddwellerstraitsfix_menu.0.name:0 "Void Dwellers traits fix"
+ voiddwellerstraitsfix_menu.0.desc:0 "Void Dwellers traits fix menu"
+ voiddwellerstraitsfix_menu_mod_pc_city_habitability:0 "[root.GetName_voiddwellerstraitsfix_menu_mod_pc_city_habitability]"

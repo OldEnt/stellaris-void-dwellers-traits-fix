@@ -1,0 +1,17 @@
+defined_text = {
+	name = GetName_voiddwellerstraitsfix_menu_mod_pc_city_habitability
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+			}
+		}
+		localization_key = ON
+	}
+	text = {
+		trigger = {
+			has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+		}
+		localization_key = OFF
+	}
+}

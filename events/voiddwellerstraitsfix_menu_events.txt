@@ -1,0 +1,118 @@
+# Template by Erdnuss (SLEX)
+namespace = voiddwellerstraitsfix_menu
+#
+country_event = {
+	id = voiddwellerstraitsfix_menu.0
+	is_triggered_only = yes
+	title = "voiddwellerstraitsfix_menu.0.name"
+	desc = "voiddwellerstraitsfix_menu.0.desc"
+	diplomatic = yes
+	custom_gui = "dmm_template_window"
+	option = {
+		name = GAME_SETTINGS
+		custom_gui = "dmm_template_submenu_0"
+		allow = {
+			always = no
+		}
+	}
+	option = {
+		name = FRONT_BACK
+		custom_gui = "dmm_template_submenu_1"
+		hidden_effect = {
+			country_event = {
+				id = dmm_events.0
+			}
+		}
+	}
+	option = {
+		name = EXIT
+		custom_gui = "dmm_template_submenu_2"
+		hidden_effect = {
+			break = yes
+		}
+	}
+	option = {
+		name = mod_pc_city_habitability
+		custom_gui = "dmm_template_left_text"
+	}
+	option = {
+		name = voiddwellerstraitsfix_menu_mod_pc_city_habitability
+		custom_gui = "dmm_template_left_button"
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+					}
+				}
+				set_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+			}
+			else = {
+				remove_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+			}
+			country_event = {
+				id = voiddwellerstraitsfix_menu.0
+			}
+		}
+	}
+	# option = {
+	# 	name = dmm_template.0.0.right_text
+	# 	custom_gui = "dmm_template_right_text"
+	# }
+	# option = {
+	# 	name = dmm_template.0.0.right_button
+	# 	custom_gui = "dmm_template_right_button"
+	# }
+	# option = {
+	# 	name = dmm_template.0.1.left_text
+	# 	custom_gui = "dmm_template_left_text"
+	# }
+	# option = {
+	# 	name = dmm_template.0.1.left_button
+	# 	custom_gui = "dmm_template_left_button"
+	# }
+	# option = {
+	# 	name = dmm_template.0.dummy
+	# 	custom_gui = "dmm_template_right_dummy"
+	# }
+	# option = {
+	# 	name = dmm_template.0.2.left_text
+	# 	custom_gui = "dmm_template_left_text"
+	# }
+	# option = {
+	# 	name = dmm_template.0.2.left_checkbox_checked
+	# 	custom_gui = "dmm_template_left_checkbox_checked"
+	# }
+	# option = {
+	# 	name = dmm_template.0.dummy
+	# 	custom_gui = "dmm_template_right_dummy"
+	# }
+	# option = {
+	# 	name = dmm_template.0.3.left_text
+	# 	custom_gui = "dmm_template_left_text"
+	# }
+	# option = {
+	# 	name = dmm_template.0.3.left_button
+	# 	custom_gui = "dmm_template_left_button"
+	# }
+	# option = {
+	# 	name = dmm_template.0.3.right_text
+	# 	custom_gui = "dmm_template_right_text"
+	# }
+	# option = {
+	# 	name = dmm_template.0.3.right_checkbox_unchecked
+	# 	custom_gui = "dmm_template_right_checkbox_unchecked"
+	# }
+	option = {
+		name = dmm_template.0.3.close
+		custom_gui = "dmm_template_close_button"
+		default_hide_option = yes
+	}
+}
+
+# country_event = {
+# 	id = voiddwellerstraitsfix_menu.1
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	# another submenu
+# }
