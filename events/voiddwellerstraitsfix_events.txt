@@ -11,6 +11,7 @@ event = {
 # Dummy event to reduce error.log. Do not use!
 event = {
 	id = voiddwellerstraitsfix.100
+	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
 		set_planet_flag = voiddwellerstraitsfix
