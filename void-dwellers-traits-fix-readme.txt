@@ -11,6 +11,7 @@ Void Dwellers will no longer receive negative trait when settling Ring World or 
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2079398322]Twinks Atlanteans[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC2 Modjam Freebooters Origin[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=727000451]More Events Mod[/url]
+[*][url=https://steamcommunity.com/workshop/filedetails/?id=2178603631]Acquisition of Technology[/url]
 [/list]
 
 Source on GitHub: https://github.com/OldEnt/stellaris-void-dwellers-traits-fix
