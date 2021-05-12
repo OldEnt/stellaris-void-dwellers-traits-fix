@@ -77,6 +77,11 @@ uses_district_set = nsc_freebooter_habitat
 # More Events Mod
 is_planet_class = pc_mem_vazuran_habitat
 
+# Acquisition of Technology
+uses_district_set = dm_habitat
+uses_district_set = ae_habitat
+uses_district_set = sigma_habitat
+
 This mod will not remove negative trait from your existing pops. You can gene-mod them to your starting pops easily.
 
 Overwrites [b]origin.1[/b] event (present in events/origin_events_1.txt).

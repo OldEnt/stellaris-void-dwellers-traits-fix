@@ -182,6 +182,10 @@ pop_event = {
 						uses_district_set = nsc_freebooter_habitat
 						# More Events Mod
 						is_planet_class = pc_mem_vazuran_habitat
+						# Acquisition of Technology
+						uses_district_set = dm_habitat
+						uses_district_set = ae_habitat
+						uses_district_set = sigma_habitat
 					}
 				}
 			}
@@ -373,6 +377,10 @@ pop_event = {
 						uses_district_set = nsc_freebooter_habitat
 						# More Events Mod
 						is_planet_class = pc_mem_vazuran_habitat
+						# Acquisition of Technology
+						uses_district_set = dm_habitat
+						uses_district_set = ae_habitat
+						uses_district_set = sigma_habitat
 					}
 				}
 			}
