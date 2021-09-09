@@ -12,12 +12,18 @@ Void Dwellers will no longer receive negative trait when settling Ring World or 
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC2 Modjam Freebooters Origin[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=727000451]More Events Mod[/url]
 [*][url=https://steamcommunity.com/workshop/filedetails/?id=2178603631]Acquisition of Technology[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2536057864]Planetary Ringworlds[/url]
 [/list]
+
+Counts habitable_structure = yes (very useful with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458836869]The Merger of Rules mod[/url]). Exclusion planet flag: voiddwellerstraitsfix_forbidden.
 
 Source on GitHub: https://github.com/OldEnt/stellaris-void-dwellers-traits-fix
 
 Supports [url=https://steamcommunity.com/workshop/filedetails/?id=2458024521]Dynamic Mod Menu (3.0.*)[/url] and uses its menu template. Use it to switch ecumenopolis habitability off. Alternatively, execute the following command:
 [code]effect set_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited[/code]
+
+Mod has the following check for exclusion flag before checking list below:
+NOT = { has_planet_flag = voiddwellerstraitsfix_forbidden }
 
 Makes following planet classes fully habitable for Void Dwellers:
 
@@ -27,6 +33,7 @@ has_planet_flag = voiddwellerstraitsfix
 # Vanilla
 uses_district_set = habitat
 uses_district_set = ring_world
+habitable_structure = yes						# Very useful with The Merger of Rules mod.
 # is_planet_class = pc_city
 NOT = { has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited }
 uses_district_set = city_world
@@ -82,6 +89,12 @@ is_planet_class = pc_mem_vazuran_habitat
 uses_district_set = dm_habitat
 uses_district_set = ae_habitat
 uses_district_set = sigma_habitat
+
+# Planetary Ringworlds
+is_planet_class = pc_planetary_ringworld
+is_planet_class = pc_planetary_ringworld_machine
+is_planet_class = pc_planetary_ringworld_hive
+is_planet_class = pc_planetary_ringworld_city
 
 This mod will not remove negative trait from your existing pops. You can gene-mod them to your starting pops easily.
 
