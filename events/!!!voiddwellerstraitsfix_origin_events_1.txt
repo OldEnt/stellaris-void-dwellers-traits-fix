@@ -12,12 +12,16 @@ pop_event = {
 					has_trait = trait_void_dweller_1
 				}
 				from = {
+					NOT = {
+						has_planet_flag = voiddwellerstraitsfix_forbidden
+					}
 					OR = {
 						# Custom flag for mods to use. Set on your planet.
 						has_planet_flag = voiddwellerstraitsfix
 						# Vanilla
 						# is_planet_class = pc_habitat
 						uses_district_set = habitat
+						habitable_structure = yes						# Very useful with The Merger of Rules mod.
 						# is_planet_class = pc_city
 						AND = {
 							uses_district_set = city_world
@@ -186,6 +190,11 @@ pop_event = {
 						uses_district_set = dm_habitat
 						uses_district_set = ae_habitat
 						uses_district_set = sigma_habitat
+						# Planetary Ringworlds
+						is_planet_class = pc_planetary_ringworld
+						is_planet_class = pc_planetary_ringworld_machine
+						is_planet_class = pc_planetary_ringworld_hive
+						is_planet_class = pc_planetary_ringworld_city
 					}
 				}
 			}
@@ -207,180 +216,189 @@ pop_event = {
 			limit = {
 				has_trait = trait_void_dweller_1
 				from = {
-					NOR = {
-						# Custom flag for mods to use. Set on your planet.
-						has_planet_flag = voiddwellerstraitsfix
-						# Vanilla
-						# is_planet_class = pc_habitat
-						uses_district_set = habitat
-						# is_planet_class = pc_city
-						AND = {
-							uses_district_set = city_world
-							NOT = {
-								has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+					OR = {
+						has_planet_flag = voiddwellerstraitsfix_forbidden
+						NOR = {
+							# Custom flag for mods to use. Set on your planet.
+							has_planet_flag = voiddwellerstraitsfix
+							# Vanilla
+							# is_planet_class = pc_habitat
+							uses_district_set = habitat
+							habitable_structure = yes							# Very useful with The Merger of Rules mod.
+							# is_planet_class = pc_city
+							AND = {
+								uses_district_set = city_world
+								NOT = {
+									has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+								}
 							}
+							# is_planet_class = pc_ringworld_habitable
+							uses_district_set = ring_world
+							# Planetary Diversity - Planetary Habitats
+							has_planet_flag = pdhab							# failsafe flag
+							uses_district_set = pdplanethab
+							AND = {
+								NOT = {
+									has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
+								}
+								OR = {
+									uses_district_set = pdarchive									# Archive World
+									uses_district_set = pdecocity									# Eco-Arcology
+									uses_district_set = pdnecropolis									# Necropolis
+									uses_district_set = pdpalacearc									# Palace and Capital Arcology
+									uses_district_set = pdmilarc									# Fortress Arcology
+									uses_district_set = pdshroudarc									# Shrouded Arcology
+									is_planet_class = pc_technoorganic									# Techno-Organic World
+								}
+							}
+							#	is_planet_class = pc_pd_barren_cold_hab
+							#	is_planet_class = pc_pd_barren_hab
+							#	is_planet_class = pc_pd_frozen_hab
+							#	is_planet_class = pc_pd_gas_giant_hab
+							#	is_planet_class = pc_pd_hothouse_hab
+							#	is_planet_class = pc_pd_molten_hab
+							#	is_planet_class = pc_pd_asteroid_hab
+							#	is_planet_class = pc_pd_toxic_hab
+							# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+							# unsupported in Stellaris 3.*, use Legacy fix version
+							# is_planet_class = pc_gghab
+							# is_planet_class = pc_tmhab
+							# is_planet_class = pc_tmhab2
+							# is_planet_class = pc_mmhab
+							# is_planet_class = pc_mmhab2
+							# is_planet_class = pc_bhab
+							# is_planet_class = pc_bchab
+							# is_planet_class = pc_mhab
+							# is_planet_class = pc_fhab
+							# is_planet_class = pc_fmhab
+							# is_planet_class = pc_mehab
+							# Starborn: Improved Voidtouched
+							uses_district_set = starborn_start
+							# is_planet_class = pc_starborn_habitat_start
+							# Dyson Swarm - colonizing space
+							uses_district_set = Dyson_swarm
+							# is_planet_class = pc_dyson_swarm
+							# Living Space
+							has_planet_flag = stpg_planetary_habitat
+							# is_planet_class = pc_gas_giant_habitat
+							# is_planet_class = pc_asteroid_habitat
+							# is_planet_class = pc_ice_asteroid_habitat
+							# is_planet_class = pc_rare_crystal_asteroid_habitat
+							# is_planet_class = pc_molten_habitat
+							# is_planet_class = pc_barren_habitat
+							# is_planet_class = pc_barren_cold_habitat
+							# is_planet_class = pc_toxic_habitat
+							# is_planet_class = pc_frozen_habitat
+							# is_planet_class = pc_b_star_habitat
+							# is_planet_class = pc_a_star_habitat
+							# is_planet_class = pc_f_star_habitat
+							# is_planet_class = pc_g_star_habitat
+							# is_planet_class = pc_k_star_habitat
+							# is_planet_class = pc_m_star_habitat
+							# is_planet_class = pc_m_giant_star_habitat
+							# is_planet_class = pc_t_star_habitat
+							# is_planet_class = pc_black_hole_habitat
+							# is_planet_class = pc_neutron_star_habitat
+							# is_planet_class = pc_pulsar_habitat
+							# Habitation
+							has_planet_flag = hab_init
+							# is_planet_class = pc_hab_gas_giant_energy
+							# is_planet_class = pc_hab_gas_giant_science
+							# is_planet_class = pc_hab_gas_giant_minerals
+							# is_planet_class = pc_hab_asteroid
+							# is_planet_class = pc_hab_ice_asteroid
+							# is_planet_class = pc_hab_rare_crystal_asteroid
+							# is_planet_class = pc_hab_molten
+							# is_planet_class = pc_hab_barren
+							# is_planet_class = pc_hab_barren_cold
+							# is_planet_class = pc_hab_toxic
+							# is_planet_class = pc_hab_frozen
+							# Gigastructural Engineering & More
+							uses_district_set = giga_planet
+							uses_district_set = giga_alderson
+							uses_district_set = giga_birch
+							uses_district_set = giga_habitat
+							uses_district_set = interstellar_ring
+							uses_district_set = penrose_ring
+							uses_district_set = virtual_ring
+							# is_planet_class = pc_ringworld_city
+							# is_planet_class = pc_ringworld_machine
+							# is_planet_class = pc_ringworld_hive
+							# is_planet_class = pc_birch
+							# is_planet_class = pc_flat_world
+							# is_planet_class = pc_habitable_m_star
+							# is_planet_class = pc_habitable_k_star
+							# is_planet_class = pc_habitable_g_star
+							# is_planet_class = pc_ringworld_alloys
+							# is_planet_class = pc_giga_planetary_computer
+							# is_planet_class = pc_city_ringworld_habitable
+							# is_planet_class = pc_habitable_gas_giant
+							# is_planet_class = pc_ll_temperate
+							# is_planet_class = pc_ll_foggy
+							# is_planet_class = pc_ll_torrid
+							# is_planet_class = pc_virtual_world
+							# is_planet_class = pc_squareworld_habitable
+							# is_planet_class = pc_giga_ringworld_habitable
+							# is_planet_class = pc_gigaorbital_ring
+							# is_planet_class = pc_interstellar_habitat
+							# is_planet_class = pc_interstellar_ringworld_habitable
+							# is_planet_class = pc_virtual_reality
+							# is_planet_class = pc_virtual_industry
+							# is_planet_class = pc_virtual_stellar_industry
+							# is_planet_class = pc_alderson_slice_gaia
+							# is_planet_class = pc_alderson_slice_pc
+							# is_planet_class = pc_alderson_slice_ecu
+							# is_planet_class = pc_equatorial_shipyard
+							# is_planet_class = pc_gigaorbital_ring
+							# is_planet_class = pc_giga_penrose_habitable
+							# # Ascendancy Ringworlds
+							# unsupported in Stellaris 3.*, use Legacy fix version
+							# is_planet_class = pc_ringworld_city
+							# is_planet_class = pc_ringworld_eco_city
+							# is_planet_class = pc_ringworld_energy_city
+							# is_planet_class = pc_ringworld_machine
+							# is_planet_class = pc_ringworld_hive
+							# is_planet_class = pc_ringworld_shrouded_paradise
+							# is_planet_class = pc_square_ringworld_city
+							# is_planet_class = pc_square_ringworld_energy_city
+							# is_planet_class = pc_square_ringworld_machine
+							# is_planet_class = pc_square_ringworld_hive
+							# is_planet_class = pc_ringworld_assimilated
+							# is_planet_class = pc_ringworld_assimilated2
+							# is_planet_class = pc_ringworld_assimilated3
+							# is_planet_class = pc_ringworld_assimilated4
+							# is_planet_class = pc_ringworld_machine_factory
+							# is_planet_class = pc_ringworld_bioforge
+							# is_planet_class = pc_ringworld_mining
+							# is_planet_class = pc_ringworld_energy
+							# is_planet_class = pc_ringworld_trade
+							# is_planet_class = pc_ringworld_training
+							# is_planet_class = pc_ringworld_training_shielded
+							# is_planet_class = pc_ringworld_eco
+							# is_planet_class = pc_ringworld_farming
+							# is_planet_class = pc_ringworld_razed_city
+							# is_planet_class = pc_ringworld_razed_energy
+							# is_planet_class = pc_ringworld_razed_farming
+							# is_planet_class = pc_ringworld_razed_mining
+							# is_planet_class = pc_ringworld_razed_training
+							# is_planet_class = pc_ringworld_razed_eco
+							# Twinks Atlanteans
+							uses_district_set = skypalace
+							# is_planet_class = pc_skypalace
+							# NSC2 Modjam Freebooters Origin
+							uses_district_set = nsc_freebooter_habitat
+							# More Events Mod
+							is_planet_class = pc_mem_vazuran_habitat
+							# Acquisition of Technology
+							uses_district_set = dm_habitat
+							uses_district_set = ae_habitat
+							uses_district_set = sigma_habitat
+							# Planetary Ringworlds
+							is_planet_class = pc_planetary_ringworld
+							is_planet_class = pc_planetary_ringworld_machine
+							is_planet_class = pc_planetary_ringworld_hive
+							is_planet_class = pc_planetary_ringworld_city
 						}
-						# is_planet_class = pc_ringworld_habitable
-						uses_district_set = ring_world
-						# Planetary Diversity - Planetary Habitats
-						has_planet_flag = pdhab						# failsafe flag
-						uses_district_set = pdplanethab
-						AND = {
-							NOT = {
-								has_global_flag = voiddwellerstraitsfix_ecumenopolises_prohibited
-							}
-							OR = {
-								uses_district_set = pdarchive								# Archive World
-								uses_district_set = pdecocity								# Eco-Arcology
-								uses_district_set = pdnecropolis								# Necropolis
-								uses_district_set = pdpalacearc								# Palace and Capital Arcology
-								uses_district_set = pdmilarc								# Fortress Arcology
-								uses_district_set = pdshroudarc								# Shrouded Arcology
-								is_planet_class = pc_technoorganic								# Techno-Organic World
-							}
-						}
-						#	is_planet_class = pc_pd_barren_cold_hab
-						#	is_planet_class = pc_pd_barren_hab
-						#	is_planet_class = pc_pd_frozen_hab
-						#	is_planet_class = pc_pd_gas_giant_hab
-						#	is_planet_class = pc_pd_hothouse_hab
-						#	is_planet_class = pc_pd_molten_hab
-						#	is_planet_class = pc_pd_asteroid_hab
-						#	is_planet_class = pc_pd_toxic_hab
-						# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-						# unsupported in Stellaris 3.*, use Legacy fix version
-						# is_planet_class = pc_gghab
-						# is_planet_class = pc_tmhab
-						# is_planet_class = pc_tmhab2
-						# is_planet_class = pc_mmhab
-						# is_planet_class = pc_mmhab2
-						# is_planet_class = pc_bhab
-						# is_planet_class = pc_bchab
-						# is_planet_class = pc_mhab
-						# is_planet_class = pc_fhab
-						# is_planet_class = pc_fmhab
-						# is_planet_class = pc_mehab
-						# Starborn: Improved Voidtouched
-						uses_district_set = starborn_start
-						# is_planet_class = pc_starborn_habitat_start
-						# Dyson Swarm - colonizing space
-						uses_district_set = Dyson_swarm
-						# is_planet_class = pc_dyson_swarm
-						# Living Space
-						has_planet_flag = stpg_planetary_habitat
-						# is_planet_class = pc_gas_giant_habitat
-						# is_planet_class = pc_asteroid_habitat
-						# is_planet_class = pc_ice_asteroid_habitat
-						# is_planet_class = pc_rare_crystal_asteroid_habitat
-						# is_planet_class = pc_molten_habitat
-						# is_planet_class = pc_barren_habitat
-						# is_planet_class = pc_barren_cold_habitat
-						# is_planet_class = pc_toxic_habitat
-						# is_planet_class = pc_frozen_habitat
-						# is_planet_class = pc_b_star_habitat
-						# is_planet_class = pc_a_star_habitat
-						# is_planet_class = pc_f_star_habitat
-						# is_planet_class = pc_g_star_habitat
-						# is_planet_class = pc_k_star_habitat
-						# is_planet_class = pc_m_star_habitat
-						# is_planet_class = pc_m_giant_star_habitat
-						# is_planet_class = pc_t_star_habitat
-						# is_planet_class = pc_black_hole_habitat
-						# is_planet_class = pc_neutron_star_habitat
-						# is_planet_class = pc_pulsar_habitat
-						# Habitation
-						has_planet_flag = hab_init
-						# is_planet_class = pc_hab_gas_giant_energy
-						# is_planet_class = pc_hab_gas_giant_science
-						# is_planet_class = pc_hab_gas_giant_minerals
-						# is_planet_class = pc_hab_asteroid
-						# is_planet_class = pc_hab_ice_asteroid
-						# is_planet_class = pc_hab_rare_crystal_asteroid
-						# is_planet_class = pc_hab_molten
-						# is_planet_class = pc_hab_barren
-						# is_planet_class = pc_hab_barren_cold
-						# is_planet_class = pc_hab_toxic
-						# is_planet_class = pc_hab_frozen
-						# Gigastructural Engineering & More
-						uses_district_set = giga_planet
-						uses_district_set = giga_alderson
-						uses_district_set = giga_birch
-						uses_district_set = giga_habitat
-						uses_district_set = interstellar_ring
-						uses_district_set = penrose_ring
-						uses_district_set = virtual_ring
-						# is_planet_class = pc_ringworld_city
-						# is_planet_class = pc_ringworld_machine
-						# is_planet_class = pc_ringworld_hive
-						# is_planet_class = pc_birch
-						# is_planet_class = pc_flat_world
-						# is_planet_class = pc_habitable_m_star
-						# is_planet_class = pc_habitable_k_star
-						# is_planet_class = pc_habitable_g_star
-						# is_planet_class = pc_ringworld_alloys
-						# is_planet_class = pc_giga_planetary_computer
-						# is_planet_class = pc_city_ringworld_habitable
-						# is_planet_class = pc_habitable_gas_giant
-						# is_planet_class = pc_ll_temperate
-						# is_planet_class = pc_ll_foggy
-						# is_planet_class = pc_ll_torrid
-						# is_planet_class = pc_virtual_world
-						# is_planet_class = pc_squareworld_habitable
-						# is_planet_class = pc_giga_ringworld_habitable
-						# is_planet_class = pc_gigaorbital_ring
-						# is_planet_class = pc_interstellar_habitat
-						# is_planet_class = pc_interstellar_ringworld_habitable
-						# is_planet_class = pc_virtual_reality
-						# is_planet_class = pc_virtual_industry
-						# is_planet_class = pc_virtual_stellar_industry
-						# is_planet_class = pc_alderson_slice_gaia
-						# is_planet_class = pc_alderson_slice_pc
-						# is_planet_class = pc_alderson_slice_ecu
-						# is_planet_class = pc_equatorial_shipyard
-						# is_planet_class = pc_gigaorbital_ring
-						# is_planet_class = pc_giga_penrose_habitable
-						# # Ascendancy Ringworlds
-						# unsupported in Stellaris 3.*, use Legacy fix version
-						# is_planet_class = pc_ringworld_city
-						# is_planet_class = pc_ringworld_eco_city
-						# is_planet_class = pc_ringworld_energy_city
-						# is_planet_class = pc_ringworld_machine
-						# is_planet_class = pc_ringworld_hive
-						# is_planet_class = pc_ringworld_shrouded_paradise
-						# is_planet_class = pc_square_ringworld_city
-						# is_planet_class = pc_square_ringworld_energy_city
-						# is_planet_class = pc_square_ringworld_machine
-						# is_planet_class = pc_square_ringworld_hive
-						# is_planet_class = pc_ringworld_assimilated
-						# is_planet_class = pc_ringworld_assimilated2
-						# is_planet_class = pc_ringworld_assimilated3
-						# is_planet_class = pc_ringworld_assimilated4
-						# is_planet_class = pc_ringworld_machine_factory
-						# is_planet_class = pc_ringworld_bioforge
-						# is_planet_class = pc_ringworld_mining
-						# is_planet_class = pc_ringworld_energy
-						# is_planet_class = pc_ringworld_trade
-						# is_planet_class = pc_ringworld_training
-						# is_planet_class = pc_ringworld_training_shielded
-						# is_planet_class = pc_ringworld_eco
-						# is_planet_class = pc_ringworld_farming
-						# is_planet_class = pc_ringworld_razed_city
-						# is_planet_class = pc_ringworld_razed_energy
-						# is_planet_class = pc_ringworld_razed_farming
-						# is_planet_class = pc_ringworld_razed_mining
-						# is_planet_class = pc_ringworld_razed_training
-						# is_planet_class = pc_ringworld_razed_eco
-						# Twinks Atlanteans
-						uses_district_set = skypalace
-						# is_planet_class = pc_skypalace
-						# NSC2 Modjam Freebooters Origin
-						uses_district_set = nsc_freebooter_habitat
-						# More Events Mod
-						is_planet_class = pc_mem_vazuran_habitat
-						# Acquisition of Technology
-						uses_district_set = dm_habitat
-						uses_district_set = ae_habitat
-						uses_district_set = sigma_habitat
 					}
 				}
 			}
